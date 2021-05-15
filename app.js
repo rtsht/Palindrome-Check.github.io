@@ -13,17 +13,19 @@ txtBox.addEventListener("focusout", function() {
     }
 });
 
+// Dynamic updating of result whilst accepting input
 txtBox.addEventListener("keyup", function() {
     checkText();
 });
 
-// Click the button when hitting enter in txt field
+// Test input on enter key - !redundant with dynamic updating!
 txtBox.addEventListener("keyup", function(e) {
     if (e.key == "Enter") {
         checkText();
     }
-})
+});
 
+// Simple string reverse without modifying og
 function reverse(str) {
     var reversed = "";
     for (i = str.length - 1; i >= 0; i--) {
@@ -32,6 +34,7 @@ function reverse(str) {
     return reversed;
 }
 
+// Checking the input for a palindrome. Input is lowered and trimmed of ALL whitespace
 function checkText() {
     if (txtBox.value == "") {
         answr.innerText = "";
