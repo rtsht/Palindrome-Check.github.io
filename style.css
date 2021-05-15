@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+body {
+    background-color: lightblue;
+    font-family: "Abel", sans-serif;
+}
+
+.container {
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+}
+
+.title {
+    font-size: 4em;
+}
+
+.container h1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.container h1,
+#text-box,
+#answer {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#answer {
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.yes-answer {
+    text-align: left !important;
+    color: green;
+}
+
+.no-answer {
+    text-align: right !important;
+    color: red;
+}
+
+#text-box {
+    font-size: 24px;
+    border: none;
+}
+
+#button,
+#answer {
+    font-size: 20px;
+}
